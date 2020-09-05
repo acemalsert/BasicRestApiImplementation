@@ -11,5 +11,4 @@ public interface ICountryService {
 		void add(Country country);
 		void update(Country country);
 		void delete(Country country);
-		//Country getById(int id);
 }
