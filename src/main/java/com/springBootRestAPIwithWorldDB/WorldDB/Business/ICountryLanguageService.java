@@ -10,5 +10,4 @@ public interface ICountryLanguageService {
 		void add(CountryLanguage countryLanguage);
 		void update(CountryLanguage countryLanguage);
 		void delete(CountryLanguage countryLanguage);
-		//City getById(int id);
 }
