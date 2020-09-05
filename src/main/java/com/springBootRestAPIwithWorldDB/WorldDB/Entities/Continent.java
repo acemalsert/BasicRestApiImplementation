@@ -7,8 +7,8 @@ public enum Continent {
 	Europe("Europe"),
 	North_America("North America"),
 	Africa("Africa"),
-	Oceania("Ocenia"),
-	Antarctica("Antartica"),
+	Oceania("Oceania"),
+	Antartica("Antartica"),
 	South_America("South America");
 	
 	 public final String input;
