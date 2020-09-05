@@ -26,8 +26,6 @@ public class HibernateCityDal implements ICityDal {
 	@Transactional 
 	public List<City> getAll() {
 		Session session =entitiyManager.unwrap(Session.class); 
-		// Hibernate session seçtik.
-		// Hibernate enjeksiyonu yaptık
 		List<City> cities  = session.createQuery("from City",City.class).getResultList();
 		return cities;
 	}
