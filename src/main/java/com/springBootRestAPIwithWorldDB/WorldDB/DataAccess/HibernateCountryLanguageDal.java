@@ -52,8 +52,8 @@ public class HibernateCountryLanguageDal implements ICountryLanguageDal {
 	@Transactional 
 	public void delete(CountryLanguage countryLanguage) {
 		Session session =entityManager.unwrap(Session.class);
-		//CountryLanguage countryLanguageToDelete = session.get(Country.class,countryLanguage.getLanguage()); ??
-		//session.delete(countryLanguageToDelete);
+		CountryLanguage countryLanguageToDelete = session.get(CountryLanguage.class,countryLanguage.getLanguage()); 
+		session.delete(countryLanguageToDelete);
 		
 	}
 }
