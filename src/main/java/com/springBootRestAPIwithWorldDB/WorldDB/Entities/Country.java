@@ -90,18 +90,6 @@ public class Country implements Serializable{
 	public Country() {
 	}
 	
-	public  static String valueOfOrDefault(String myValue) {
-		//replace space with underscore so it matches enum name
-		        String value=myValue.toUpperCase().replaceAll("\\s", "_");
-		        for(Continent type : Continent.class.getEnumConstants()) {
-		          if(type.name().equalsIgnoreCase(value)) {
-		            return type.toString();
-		          }
-		        }
-		        return myValue;
-		      }
-	
-
 	public String getCode() {
 		return code;
 	}
