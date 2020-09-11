@@ -23,7 +23,7 @@ public class CountryLanguage {
 	
 	
 	@Enumerated(EnumType.STRING)
-	private IsOfficial isOfficial; // Not sure
+	private IsOfficial isOfficial; 
 	
 	
 	@Column(name="percentage")
